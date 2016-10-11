@@ -1,0 +1,5 @@
+---
+# vars file for roles/precedence
+#foo: "precedence/vars"
+delta:
+  gamma: "vars/delta.gamma"

@@ -1,0 +1,8 @@
+---
+username: kitchen
+ssh_key: "/home/rodolfo.gonzalez/Documents/Globant/ansible/.kitchen/docker_id_rsa"
+image_id: 5ec8e71ac409
+container_id: 940c08554979d877789e737945d3862214c5def5c333845d253595876407ac45
+hostname: localhost
+port: 32776
+last_action: verify

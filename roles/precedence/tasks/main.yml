@@ -1,0 +1,7 @@
+---
+# tasks file for roles/precedence
+- name: foo
+  debug: var=foo
+
+- name: hashes
+  debug: var=delta

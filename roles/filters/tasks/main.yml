@@ -1,0 +1,4 @@
+---
+# tasks file for roles/filters
+- include: jinja.yml
+- include: ansible.yml

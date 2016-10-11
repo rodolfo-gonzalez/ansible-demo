@@ -1,0 +1,65 @@
+- name: default
+  debug: msg="{{ some_var | default('default value') }}"
+
+- set_fact:
+    numbers:
+      - 1
+      - 2
+      - 2
+      - 4
+      - 6
+
+- set_fact:
+    letters:
+      - a
+      - b
+      - c
+      - d
+      - e
+
+- name: min
+  debug: msg="{{ numbers | min }}"
+
+- name: max
+  debug: msg="{{ numbers | max }}"
+
+- name: unique
+  debug: msg="{{ numbers | unique }}"
+
+- name: random
+  debug: msg="{{ 100 | random() }}"
+
+- name: merge lists
+  debug: msg="{{ numbers + letters }}"
+
+- set_fact:
+    dict_numbers:
+      numbers:
+        - 1
+        - 2
+        - 2
+        - 4
+        - 6
+    dict_letters:
+      letters:
+        - a
+        - b
+        - c
+        - d
+        - e
+
+- name: merge dict
+  debug: msg="{{ dict_numbers | combine(dict_letters) }}".
+
+- name: lower
+  debug: msg="{{ 'LOWER' | lower }}"
+
+- name: upper
+  debug: msg="{{ 'upper' | upper }}"
+
+- name: title
+  debug: msg="{{ 'title'.title() }}"
+
+- name: split
+  debug: var=item
+  with_items: "{{ '1,2,3,4,5'.split(',') }}"

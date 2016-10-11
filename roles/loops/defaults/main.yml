@@ -1,0 +1,59 @@
+---
+# defaults file for roles/loops
+colors:
+  - blue
+  - gree
+  - red
+  - magenta
+  - yellow
+  - brown
+  - black
+  - white
+  - cyan
+
+cars:
+  - Prius
+  - Challenger
+  - Charger
+  - Civic
+  - Mustang
+  - Fit
+  - Mazda5
+  - Versa
+  - Jetta
+
+face:
+  eyes: brown
+  lips: pink
+  hair: black
+  nose: small
+
+bikes:
+  brands:
+    trek:
+      name: trek
+      models:
+        - district
+        - lync
+        - crossrip
+    giant:
+      name: giant
+      models:
+        - talon
+        - anyroad
+        - atx
+    specialized:
+      name: specialized
+      models:
+        - diverge
+        - dolce evo
+        - sequoia
+    alubike:
+      name: alubike
+      models:
+        - spicy
+        - neat
+
+nested_list:
+  - "{{ colors }}"
+  - "{{ cars }}"

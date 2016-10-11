@@ -1,0 +1,29 @@
+I, [2016-10-06T16:05:41.594778 #1019]  INFO -- common-ubuntu-1404: -----> Setting up <common-ubuntu-1404>...
+I, [2016-10-06T16:05:41.596071 #1019]  INFO -- common-ubuntu-1404: Finished setting up <common-ubuntu-1404> (0m0.00s).
+I, [2016-10-06T16:05:41.596136 #1019]  INFO -- common-ubuntu-1404: -----> Verifying <common-ubuntu-1404>...
+I, [2016-10-06T16:05:41.596403 #1019]  INFO -- common-ubuntu-1404: [Serverspec] Verify on instance=#<Kitchen::Instance:0x00000002b73098> with state={:username=>"kitchen", :ssh_key=>"/home/rodolfo.gonzalez/Documents/Globant/ansible/.kitchen/docker_id_rsa", :image_id=>"5ec8e71ac409", :container_id=>"940c08554979d877789e737945d3862214c5def5c333845d253595876407ac45", :hostname=>"localhost", :port=>32776, :last_action=>"setup"}
+I, [2016-10-06T16:05:41.596478 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_USERNAME value kitchen
+I, [2016-10-06T16:05:41.596510 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_SSH_KEY value /home/rodolfo.gonzalez/Documents/Globant/ansible/.kitchen/docker_id_rsa
+I, [2016-10-06T16:05:41.596538 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_IMAGE_ID value 5ec8e71ac409
+I, [2016-10-06T16:05:41.596562 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_CONTAINER_ID value 940c08554979d877789e737945d3862214c5def5c333845d253595876407ac45
+I, [2016-10-06T16:05:41.596584 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_HOSTNAME value localhost
+I, [2016-10-06T16:05:41.596634 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_PORT value 32776
+I, [2016-10-06T16:05:41.596670 #1019]  INFO -- common-ubuntu-1404: Environment variable KITCHEN_LAST_ACTION value setup
+I, [2016-10-06T16:05:41.596776 #1019]  INFO -- common-ubuntu-1404: Installing ruby, bundler and serverspec remotely on server
+I, [2016-10-06T16:05:41.779908 #1019]  INFO -- common-ubuntu-1404: Running Serverspec
+I, [2016-10-06T16:05:41.785020 #1019]  INFO -- common-ubuntu-1404: /usr/local/bin//rspec
+I, [2016-10-06T16:05:42.101276 #1019]  INFO -- common-ubuntu-1404: 
+I, [2016-10-06T16:05:42.101347 #1019]  INFO -- common-ubuntu-1404: with packages
+I, [2016-10-06T16:05:42.101479 #1019]  INFO -- common-ubuntu-1404:   Package "htop"
+I, [2016-10-06T16:05:42.188847 #1019]  INFO -- common-ubuntu-1404: [32m    should be installed[0m
+I, [2016-10-06T16:05:42.189008 #1019]  INFO -- common-ubuntu-1404:   Package "tree"
+I, [2016-10-06T16:05:42.198653 #1019]  INFO -- common-ubuntu-1404: [32m    should be installed[0m
+I, [2016-10-06T16:05:42.198792 #1019]  INFO -- common-ubuntu-1404:   Package "figlet"
+I, [2016-10-06T16:05:42.208734 #1019]  INFO -- common-ubuntu-1404: [32m    should be installed[0m
+I, [2016-10-06T16:05:42.208894 #1019]  INFO -- common-ubuntu-1404:   Package "cowsay"
+I, [2016-10-06T16:05:42.217376 #1019]  INFO -- common-ubuntu-1404: [32m    should be installed[0m
+I, [2016-10-06T16:05:42.217695 #1019]  INFO -- common-ubuntu-1404: 
+I, [2016-10-06T16:05:42.217736 #1019]  INFO -- common-ubuntu-1404: Finished in 0.11652 seconds (files took 0.29229 seconds to load)
+I, [2016-10-06T16:05:42.217763 #1019]  INFO -- common-ubuntu-1404: [32m4 examples, 0 failures[0m
+I, [2016-10-06T16:05:42.217859 #1019]  INFO -- common-ubuntu-1404: 
+I, [2016-10-06T16:05:42.230136 #1019]  INFO -- common-ubuntu-1404: Finished verifying <common-ubuntu-1404> (0m0.63s).

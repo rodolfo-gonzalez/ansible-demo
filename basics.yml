@@ -1,0 +1,16 @@
+- hosts:
+    - super
+    - normal
+  tasks:
+    - name: Running User
+      shell: whoami
+      register: whoami_out
+    - debug: msg="{{ 'Playbook runs as user -> ' ~ whoami_out.stdout_lines }}"
+    #- name: Host Facts
+    #  debug: var=hostvars[inventory_hostname]
+    - name: Groups names
+      debug: var=group_names
+    - name: Group vars
+      debug: msg="{{ 'foo ->' ~ foo }}"
+    - name: Host vars
+      debug: msg="{{ 'bar ->' ~ bar }}"

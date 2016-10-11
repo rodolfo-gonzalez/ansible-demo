@@ -1,0 +1,4 @@
+---
+# handlers file for roles/php
+- name: print date
+  command: "date"

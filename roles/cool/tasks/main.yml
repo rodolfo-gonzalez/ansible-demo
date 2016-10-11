@@ -1,0 +1,8 @@
+---
+# tasks file for roles/php
+- name: Cool task in cool role
+  debug: msg="COOL"
+  notify: "print date"
+  changed_when: True
+  tags:
+    - cool

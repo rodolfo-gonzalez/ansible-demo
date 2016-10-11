@@ -1,0 +1,2 @@
+foo: "host_vars/super"
+bar: "host_vars/super"

@@ -1,0 +1,6 @@
+foo: "host_vars/normal"
+bar: "host_vars/normal"
+
+delta:
+  beta: "host_vars/delta.beta"
+  

@@ -1,0 +1,38 @@
+---
+# tasks file for roles/loops
+- name: Standard loop
+  debug: msg="{{ 'color -> ' ~ item }}"
+  with_items: "{{ colors }}"
+  tags: loops_standard
+
+- name: together loop
+  debug: msg="{{ item[0] ~ ' is ' ~ item[1] }}"
+  with_together:
+    - "{{ cars }}"
+    - "{{ colors }}"
+  tags: loops_together
+
+- name: nested loop
+  debug: msg="{{ item[0] ~ ' is ' ~ item[1] }}"
+  with_nested:
+    - "{{ cars }}"
+    - "{{ colors }}"
+  tags: loops_nested
+
+- name: hashes loop
+  debug: msg="{{ item.key ~ ' - ' ~ item.value}}"
+  with_dict: "{{ face }}"
+  tags: loops_hashes
+
+- name: subelements loop
+  debug: msg="{{ item.0.name ~ ' >> ' ~ item.1 }}"
+  with_subelements:
+    - "{{ bikes.brands }}"
+    - "models"
+  tags: loops_subelements
+
+- name: flattened loop
+  debug: msg="{{ item }}"
+  with_flattened:
+    - "{{ nested_list }}"
+  tags: loops_flatenned

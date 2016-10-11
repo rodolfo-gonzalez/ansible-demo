@@ -1,0 +1,8 @@
+- hosts:
+    - localhost
+  vars_files:
+    - "host_vars/vault.yml"
+  vars:
+    secret_var: "{{ vault.secret_var }}"
+  tasks:
+    - debug: var=secret_var

@@ -1,0 +1,6 @@
+- name: Copy file
+  copy:
+    src=demo.txt
+    dest=/tmp/demo.txt
+  tags:
+    - common_copy
